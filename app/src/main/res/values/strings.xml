@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">BodyBalance</string>
+
+    <string-array name="weight_units">
+        <item>KG</item>
+        <item>POUND</item>
+    </string-array>
+
+    <string-array name="height_units">
+        <item>CM</item>
+        <item>Feet</item>
+    </string-array>
+
+
+
 </resources>
