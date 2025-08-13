@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="33dp"
+        android:text="Your BMI result"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_white"
+        android:paddingHorizontal="33dp"
+        android:paddingVertical="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Man"
+                android:scaleType="fitCenter"
+                android:src="@drawable/man" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/weightResultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have Normal body weight!"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_edit_text"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Age"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/ageTextShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="22"
+                    android:gravity="center"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Weight"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/weightTextShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="54 Kg"
+                    android:gravity="center"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Height"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/heightTextShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="165 Cm"
+                    android:gravity="center"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_one"
+                android:padding="2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/resultOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Very severely underweight"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="-16.0"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_two"
+                android:padding="2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/resultTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Severely underweight"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="16.0-16.9"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_three"
+                android:padding="2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/resultThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Underweight"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="17.0-18.4"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_four"
+                android:padding="2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/resultFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Normal"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="18.5-24.9"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_five"
+                android:padding="2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/resultFive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Overweight"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="25.0-29.9"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_six"
+                android:padding="2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/resultSix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Obese class |"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="30.0-34.9"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_seven"
+                android:padding="2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/resultSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Obese class ||"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="35.0-39.9"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_eight"
+                android:padding="2dp"/>
+
+            <RelativeLayout
+                android:id="@+id/resultEight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Obese class |||"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="39.9-"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/line"
+            android:scaleType="fitXY"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Normal weight"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="50.4-67.8 Kg"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

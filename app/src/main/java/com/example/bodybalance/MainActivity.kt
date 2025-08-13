@@ -1,5 +1,6 @@
 package com.example.bodybalance
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Initialize with ID
         val nameText = findViewById<TextView>(R.id.nameTextView)
         val btnMale = findViewById<MaterialButton>(R.id.btnMale)
         val btnFemale = findViewById<MaterialButton>(R.id.btnFemale)
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         val heightEditText = findViewById<EditText>(R.id.heightInput)
         val calculateButton = findViewById<AppCompatButton>(R.id.calculateButton)
         val weightSpinner = findViewById<Spinner>(R.id.weightSpinner)
+        val heightSpinner = findViewById<Spinner>(R.id.heightSpinner)
 
         // Name Show
         val name = intent.getStringExtra("USER_NAME") ?: ""
@@ -37,13 +40,24 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         }
 
         // Weight Spinner Setup
-        val units = resources.getStringArray(R.array.weight_units)
-        val adapter = ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,units)
+        val weightUnits = resources.getStringArray(R.array.weight_units)
+        val adapter = ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,weightUnits)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         weightSpinner.adapter = adapter
-
-        // Listener
         weightSpinner.onItemSelectedListener = this
+
+        // Height Spinner Setup
+        val heightUtils = resources.getStringArray(R.array.height_units)
+        val heightAdapter = ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,heightUtils)
+        heightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        heightSpinner.adapter = heightAdapter
+        heightSpinner.onItemSelectedListener = this
+
+        // Calculate Button
+        calculateButton.setOnClickListener {
+            val intent = Intent(this, ResultActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

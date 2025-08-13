@@ -71,8 +71,7 @@
                 android:layout_weight="1"
                 android:text="Male"
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnFemale"
@@ -82,8 +81,7 @@
                 android:layout_weight="1"
                 android:text="Female"
                 android:textColor="@color/black"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
 
         </com.google.android.material.button.MaterialButtonToggleGroup>
 
@@ -97,10 +95,10 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="120dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:paddingHorizontal="25dp"
+                android:paddingHorizontal="15dp"
                 android:text="Age"
                 android:textColor="@color/black"
                 android:textSize="19sp"
@@ -143,7 +141,6 @@
                 android:layout_width="135dp"
                 android:layout_height="50dp"
                 android:background="@drawable/bg_edit_text"
-                android:hint="Kg"
                 android:inputType="number"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -156,7 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="7dp"
-                android:background="@drawable/bg_edit_text"/>
+                android:background="@drawable/bg_edit_text" />
 
         </LinearLayout>
 
@@ -169,10 +166,10 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="120dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:paddingHorizontal="25dp"
+                android:paddingHorizontal="15dp"
                 android:text="Height"
                 android:textColor="@color/black"
                 android:textSize="19sp"
@@ -180,16 +177,22 @@
 
             <EditText
                 android:id="@+id/heightInput"
-                android:layout_width="match_parent"
+                android:layout_width="135dp"
                 android:layout_height="50dp"
                 android:background="@drawable/bg_edit_text"
-                android:hint="Cm"
                 android:inputType="number"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:textColor="@color/black"
                 android:textSize="21sp"
                 android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/heightSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/bg_edit_text" />
 
         </LinearLayout>
 
