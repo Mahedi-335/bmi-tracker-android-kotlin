@@ -23,13 +23,13 @@
     <string name="normal_weight">Normal weight</string>
 
     <string-array name="weight_units">
-        <item>KG</item>
-        <item>POUND</item>
+        <item>Kg</item>
+        <item>Ibs</item>
     </string-array>
 
     <string-array name="height_units">
-        <item>CM</item>
-        <item>Feet</item>
+        <item>Cm</item>
+        <item>Ft</item>
     </string-array>
 
 

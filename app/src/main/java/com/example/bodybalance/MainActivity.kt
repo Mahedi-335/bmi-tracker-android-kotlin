@@ -81,14 +81,15 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             val height: String
 
 
-            if (selectedHeightUnit.equals("cm", ignoreCase = true)) {
+            if (selectedHeightUnit.equals("Cm", ignoreCase = true)) {
                 height = heightEditText.text.toString()
             } else {
+                // feet + inch = height
                 val feet = heightInFeet.text.toString()
                 val inch = heightInInch.text.toString()
                 height = "$feet.$inch"
             }
-
+            // Check if any EditText is empty show Toast
             if (age.isEmpty() || weight.isEmpty() || height.isEmpty()) {
                 Toast.makeText(this, "Please fill in all fields!", Toast.LENGTH_SHORT).show()
             } else {
@@ -106,11 +107,13 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     }
 
+    // Spinner Item Select
     override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
         if (parent.id == R.id.heightSpinner) {
             val selectedUnit = parent.getItemAtPosition(position).toString()
 
-            if (selectedUnit.equals("Feet", ignoreCase = true)) {
+            // Set visibility for Ft/Cm
+            if (selectedUnit.equals("Ft", ignoreCase = true)) {
                 heightEditText.visibility = View.GONE
                 feetInchLayout.visibility = View.VISIBLE
             } else {
