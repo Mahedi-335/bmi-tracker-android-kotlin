@@ -15,9 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:paddingHorizontal="33dp"
-        android:text="Your BMI result"
+        android:text="@string/your_bmi_result"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="27sp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -31,15 +31,41 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="105dp"
+            android:layout_height="115dp"
+            android:gravity="center"
             >
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="Man"
-                android:scaleType="fitCenter"
-                android:src="@drawable/man" />
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/circleProgressbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cpb_background_progressbar_color="#D3D3D3"
+                    app:cpb_progressbar_color="#4CAF50"
+                    app:cpb_progressbar_width="8dp"
+                    app:cpb_background_progressbar_width="8dp"
+                    app:cpb_round_border="true"
+                    app:cpb_progress_max="40"
+                    app:cpb_progress="27"/>
+
+                <TextView
+                    android:id="@+id/circleProgressbarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="27.5"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+            </FrameLayout>
+
 
 
         </LinearLayout>
@@ -48,7 +74,7 @@
             android:id="@+id/weightResultText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="You have Normal body weight!"
+            android:text="@string/you_have_normal_body_weight"
             android:gravity="center"
             android:textColor="@color/black"
             android:textSize="21sp"
@@ -78,7 +104,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Age"
+                    android:text="@string/age"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="21sp"
@@ -112,7 +138,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Weight"
+                    android:text="@string/weight"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="21sp"
@@ -146,7 +172,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Height"
+                    android:text="@string/height"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="21sp"
@@ -192,7 +218,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Very severely underweight"
+                    android:text="@string/very_severely_underweight"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -234,7 +260,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Severely underweight"
+                    android:text="@string/severely_underweight"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -276,7 +302,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Underweight"
+                    android:text="@string/underweight"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -318,7 +344,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Normal"
+                    android:text="@string/normal"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -360,7 +386,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Overweight"
+                    android:text="@string/overweight"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -402,7 +428,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Obese class |"
+                    android:text="@string/obese_class"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -444,7 +470,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Obese class ||"
+                    android:text="@string/obese_class_two"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -485,7 +511,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Obese class |||"
+                    android:text="@string/obese_class_three"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -520,7 +546,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Normal weight"
+                android:text="@string/normal_weight"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/black"

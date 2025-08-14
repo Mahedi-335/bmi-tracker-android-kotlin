@@ -1,5 +1,26 @@
 <resources>
     <string name="app_name">BodyBalance</string>
+    <string name="welcome">Welcome!</string>
+    <string name="what_s_your_name">What\'s your name?</string>
+    <string name="enter_your_name_here">Enter your name here</string>
+    <string name="next">Next</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="calculate_your_bmi">Calculate your BMI</string>
+    <string name="your_bmi_result">Your BMI result</string>
+    <string name="you_have_normal_body_weight">You have Normal body weight!</string>
+    <string name="very_severely_underweight">Very severely underweight</string>
+    <string name="severely_underweight">Severely underweight</string>
+    <string name="underweight">Underweight</string>
+    <string name="normal">Normal</string>
+    <string name="overweight">Overweight</string>
+    <string name="obese_class">Obese class |</string>
+    <string name="obese_class_two">Obese class ||</string>
+    <string name="obese_class_three">Obese class |||</string>
+    <string name="normal_weight">Normal weight</string>
 
     <string-array name="weight_units">
         <item>KG</item>
