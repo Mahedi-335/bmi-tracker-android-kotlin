@@ -54,6 +54,31 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             nameText.text = "Hi!"
         }
 
+        // Select Gender
+        val selectGender: String? = null
+
+        btnMale.isSelected = false
+        btnFemale.isSelected = false
+
+        btnMale.setBackgroundColor(getColor(R.color.white))
+        btnFemale.setBackgroundColor(getColor(R.color.white))
+
+        btnMale.setOnClickListener {
+            btnMale.isSelected = true
+            btnFemale.isSelected = false
+
+            btnMale.setBackgroundColor(getColor(R.color.button_color))
+            btnFemale.setBackgroundColor(getColor(R.color.white))
+        }
+
+        btnFemale.setOnClickListener {
+            btnFemale.isSelected = true
+            btnMale.isSelected = false
+
+            btnFemale.setBackgroundColor(getColor(R.color.button_color))
+            btnMale.setBackgroundColor(getColor(R.color.white))
+        }
+
         // Weight Spinner Setup
         val weightUnits = resources.getStringArray(R.array.weight_units)
         val weightAdapter =

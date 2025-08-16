@@ -27,6 +27,7 @@ class ResultActivity : AppCompatActivity() {
     private lateinit var layoutSix: RelativeLayout
     private lateinit var layoutSeven: RelativeLayout
     private lateinit var layoutEight: RelativeLayout
+    private lateinit var normalWeightText : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,6 +51,8 @@ class ResultActivity : AppCompatActivity() {
         layoutSix = findViewById(R.id.resultSix)
         layoutSeven = findViewById(R.id.resultSeven)
         layoutEight = findViewById(R.id.resultEight)
+
+        normalWeightText = findViewById(R.id.normalWeightText)
 
         // Get Data from MainActivity
         val age = intent.getStringExtra("USER_AGE")
@@ -96,9 +99,21 @@ class ResultActivity : AppCompatActivity() {
     }
 
     private fun updateUI(bmi: Double, heightInMeter: Double) {
-        progressbar.progress = bmi.toFloat()
+
+        progressbar.progressMax = 40f
+
+        progressbar.setProgressWithAnimation(bmi.toFloat(),1500)
         progressbarText.text = String.format("%.1f", bmi)
 
+
+        val minNormalWeight = 18.5 * (heightInMeter * heightInMeter)
+        val maxNormalWeight = 24.9 * (heightInMeter * heightInMeter)
+
+        normalWeightText.text = String.format(
+            "%.1f Kg - %.1f Kg",
+            minNormalWeight,
+            maxNormalWeight
+        )
         when {
 
             // Very severely underweight Layout

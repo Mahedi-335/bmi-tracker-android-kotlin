@@ -553,9 +553,9 @@
                 android:textSize="18sp"/>
 
             <TextView
+                android:id="@+id/normalWeightText"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="50.4-67.8 Kg"
                 android:textStyle="bold"
                 android:layout_alignParentEnd="true"
                 android:gravity="center"
