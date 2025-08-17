@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.mikhaellopez.circularprogressbar.CircularProgressBar
@@ -106,6 +107,7 @@ class ResultActivity : AppCompatActivity() {
         progressbarText.text = String.format("%.1f", bmi)
 
 
+
         val minNormalWeight = 18.5 * (heightInMeter * heightInMeter)
         val maxNormalWeight = 24.9 * (heightInMeter * heightInMeter)
 
@@ -120,41 +122,50 @@ class ResultActivity : AppCompatActivity() {
             bmi < 16.0 -> {
                 weightResultText.text = "You have underweight body weight!"
                 layoutOne.setBackgroundColor(ContextCompat.getColor(this, R.color.one))
+                progressbar.progressBarColor = ContextCompat.getColor(this,R.color.one)
+
             }
             // Severely underweight Layout
             bmi in 16.1..16.9 -> {
                 weightResultText.text = "You have underweight body weight!"
                 layoutTwo.setBackgroundColor(ContextCompat.getColor(this, R.color.two))
+                progressbar.progressBarColor = ContextCompat.getColor(this, R.color.two)
             }
             // Underweight Layout
             bmi in 17.0..18.4 -> {
                 weightResultText.text = "You have underweight body weight!"
                 layoutThree.setBackgroundColor(ContextCompat.getColor(this, R.color.three))
+                progressbar.progressBarColor = ContextCompat.getColor(this, R.color.three)
             }
             // Normal Layout
             bmi in 18.5..24.9 -> {
                 weightResultText.text = "You have Normal body weight!"
                 layoutFour.setBackgroundColor(ContextCompat.getColor(this, R.color.four))
+                progressbar.progressBarColor = ContextCompat.getColor(this, R.color.four)
             }
             // Overweight Layout
             bmi in 25.00..29.9 -> {
                 weightResultText.text = "You have overweight body weight!"
                 layoutFive.setBackgroundColor(ContextCompat.getColor(this, R.color.five))
+                progressbar.progressBarColor = ContextCompat.getColor(this, R.color.five)
             }
             // Obese Class | Layout
             bmi in 30.0..34.9 -> {
                 weightResultText.text = "You have overweight body weight!"
                 layoutSix.setBackgroundColor(ContextCompat.getColor(this, R.color.six))
+                progressbar.progressBarColor = ContextCompat.getColor(this, R.color.six)
             }
             // Obese Class || Layout
             bmi in 35.0..39.9 -> {
                 weightResultText.text = "You have overweight body weight!"
                 layoutSix.setBackgroundColor(ContextCompat.getColor(this, R.color.seven))
+                progressbar.progressBarColor = ContextCompat.getColor(this, R.color.seven)
             }
             // Obese Class ||| Layout
             bmi > 40.0 -> {
                 weightResultText.text = "You have overweight body weight!"
                 layoutSix.setBackgroundColor(ContextCompat.getColor(this, R.color.eight))
+                progressbar.progressBarColor = ContextCompat.getColor(this, R.color.eight)
             }
         }
     }
