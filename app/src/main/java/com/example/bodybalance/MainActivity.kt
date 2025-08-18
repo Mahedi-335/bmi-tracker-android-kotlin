@@ -19,8 +19,8 @@ import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
-    private lateinit var heightEditText : EditText
-    private lateinit var feetInchLayout : LinearLayout
+    private lateinit var heightEditText: EditText
+    private lateinit var feetInchLayout: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -122,7 +122,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                     putExtra("USER_AGE", age)
                     putExtra("USER_WEIGHT", weight)
                     putExtra("USER_HEIGHT", height)
-                    putExtra("WEIGHT_UNIT",selectedWeightUnit)
+                    putExtra("WEIGHT_UNIT", selectedWeightUnit)
                     putExtra("HEIGHT_UNIT", selectedHeightUnit)
                 }
                 startActivity(intent)

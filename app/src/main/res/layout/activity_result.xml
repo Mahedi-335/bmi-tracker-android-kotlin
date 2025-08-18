@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@drawable/bg_gradient"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
     tools:context=".ResultActivity">
 
     <TextView
@@ -24,16 +24,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="40dp"
-        android:orientation="vertical"
         android:background="@drawable/bg_white"
+        android:orientation="vertical"
         android:paddingHorizontal="33dp"
         android:paddingVertical="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="115dp"
-            android:gravity="center"
-            >
+            android:gravity="center">
 
 
             <FrameLayout
@@ -46,12 +45,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:cpb_background_progressbar_color="#D3D3D3"
+                    app:cpb_background_progressbar_width="8dp"
+                    app:cpb_progress="27"
+                    app:cpb_progress_max="40"
                     app:cpb_progressbar_color="#4CAF50"
                     app:cpb_progressbar_width="8dp"
-                    app:cpb_background_progressbar_width="8dp"
-                    app:cpb_round_border="true"
-                    app:cpb_progress_max="40"
-                    app:cpb_progress="27"/>
+                    app:cpb_round_border="true" />
 
                 <TextView
                     android:id="@+id/circleProgressbarText"
@@ -59,13 +58,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="27.5"
-                    android:textSize="19sp"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    />
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
 
             </FrameLayout>
-
 
 
         </LinearLayout>
@@ -74,13 +71,12 @@
             android:id="@+id/weightResultText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/you_have_normal_body_weight"
+            android:layout_marginTop="15dp"
             android:gravity="center"
+            android:text="@string/you_have_normal_body_weight"
             android:textColor="@color/black"
             android:textSize="21sp"
-            android:textStyle="bold"
-            android:layout_marginTop="15dp"
-            />
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,39 +84,35 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/bg_edit_text"
             android:orientation="horizontal"
-            android:weightSum="3"
-            >
+            android:weightSum="3">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:weightSum="2"
                 android:padding="5dp"
-                >
+                android:weightSum="2">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/age"
-                    android:textStyle="bold"
                     android:gravity="center"
-                    android:textSize="21sp"
+                    android:text="@string/age"
                     android:textColor="@color/black"
-                    />
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/ageTextShow"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="22"
                     android:gravity="center"
-                    android:textSize="21sp"
+                    android:text="22"
                     android:textColor="@color/black"
-                    />
+                    android:textSize="21sp" />
 
 
             </LinearLayout>
@@ -130,31 +122,28 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:weightSum="2"
                 android:padding="5dp"
-                >
+                android:weightSum="2">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/weight"
-                    android:textStyle="bold"
                     android:gravity="center"
-                    android:textSize="21sp"
+                    android:text="@string/weight"
                     android:textColor="@color/black"
-                    />
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/weightTextShow"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="54 Kg"
                     android:gravity="center"
-                    android:textSize="21sp"
+                    android:text="54 Kg"
                     android:textColor="@color/black"
-                    />
+                    android:textSize="21sp" />
 
 
             </LinearLayout>
@@ -164,31 +153,28 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:weightSum="2"
                 android:padding="5dp"
-                >
+                android:weightSum="2">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/height"
-                    android:textStyle="bold"
                     android:gravity="center"
-                    android:textSize="21sp"
+                    android:text="@string/height"
                     android:textColor="@color/black"
-                    />
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/heightTextShow"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="165 Cm"
                     android:gravity="center"
-                    android:textSize="21sp"
+                    android:text="165 Cm"
                     android:textColor="@color/black"
-                    />
+                    android:textSize="21sp" />
 
 
             </LinearLayout>
@@ -200,39 +186,37 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="15dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/circle_one"
-                android:padding="2dp"/>
+                android:padding="2dp"
+                android:src="@drawable/circle_one" />
 
             <RelativeLayout
                 android:id="@+id/resultOne"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/very_severely_underweight"
                     android:gravity="center"
-                    android:textStyle="bold"
+                    android:text="@string/very_severely_underweight"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="-16.0"
-                    android:textStyle="bold"
                     android:layout_alignParentEnd="true"
                     android:gravity="center"
+                    android:text="-16.0"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
@@ -243,38 +227,38 @@
             android:layout_height="35dp"
             android:layout_marginTop="5dp"
             android:orientation="horizontal"
+
             >
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/circle_two"
-                android:padding="2dp"/>
+                android:padding="2dp"
+                android:src="@drawable/circle_two" />
 
             <RelativeLayout
                 android:id="@+id/resultTwo"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/severely_underweight"
                     android:gravity="center"
-                    android:textStyle="bold"
+                    android:text="@string/severely_underweight"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="16.0-16.9"
-                    android:textStyle="bold"
                     android:layout_alignParentEnd="true"
                     android:gravity="center"
+                    android:text="16.0-16.9"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
@@ -284,39 +268,37 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="5dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/circle_three"
-                android:padding="2dp"/>
+                android:padding="2dp"
+                android:src="@drawable/circle_three" />
 
             <RelativeLayout
                 android:id="@+id/resultThree"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/underweight"
                     android:gravity="center"
-                    android:textStyle="bold"
+                    android:text="@string/underweight"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="17.0-18.4"
-                    android:textStyle="bold"
                     android:layout_alignParentEnd="true"
                     android:gravity="center"
+                    android:text="17.0-18.4"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
@@ -326,39 +308,37 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="5dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/circle_four"
-                android:padding="2dp"/>
+                android:padding="2dp"
+                android:src="@drawable/circle_four" />
 
             <RelativeLayout
                 android:id="@+id/resultFour"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/normal"
                     android:gravity="center"
-                    android:textStyle="bold"
+                    android:text="@string/normal"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="18.5-24.9"
-                    android:textStyle="bold"
                     android:layout_alignParentEnd="true"
                     android:gravity="center"
+                    android:text="18.5-24.9"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
@@ -368,39 +348,37 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="5dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/circle_five"
-                android:padding="2dp"/>
+                android:padding="2dp"
+                android:src="@drawable/circle_five" />
 
             <RelativeLayout
                 android:id="@+id/resultFive"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/overweight"
                     android:gravity="center"
-                    android:textStyle="bold"
+                    android:text="@string/overweight"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="25.0-29.9"
-                    android:textStyle="bold"
                     android:layout_alignParentEnd="true"
                     android:gravity="center"
+                    android:text="25.0-29.9"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
@@ -410,39 +388,37 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="5dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/circle_six"
-                android:padding="2dp"/>
+                android:padding="2dp"
+                android:src="@drawable/circle_six" />
 
             <RelativeLayout
                 android:id="@+id/resultSix"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/obese_class"
                     android:gravity="center"
-                    android:textStyle="bold"
+                    android:text="@string/obese_class"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="30.0-34.9"
-                    android:textStyle="bold"
                     android:layout_alignParentEnd="true"
                     android:gravity="center"
+                    android:text="30.0-34.9"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
@@ -452,80 +428,77 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="5dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/circle_seven"
-                android:padding="2dp"/>
+                android:padding="2dp"
+                android:src="@drawable/circle_seven" />
 
             <RelativeLayout
                 android:id="@+id/resultSeven"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/obese_class_two"
                     android:gravity="center"
-                    android:textStyle="bold"
+                    android:text="@string/obese_class_two"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="35.0-39.9"
-                    android:textStyle="bold"
                     android:layout_alignParentEnd="true"
                     android:gravity="center"
+                    android:text="35.0-39.9"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="5dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/circle_eight"
-                android:padding="2dp"/>
+                android:padding="2dp"
+                android:src="@drawable/circle_eight" />
 
             <RelativeLayout
                 android:id="@+id/resultEight"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/obese_class_three"
                     android:gravity="center"
-                    android:textStyle="bold"
+                    android:text="@string/obese_class_three"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="39.9-"
-                    android:textStyle="bold"
                     android:layout_alignParentEnd="true"
                     android:gravity="center"
+                    android:text="39.9-"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
@@ -534,33 +507,32 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="10dp"
-            android:src="@drawable/line"
             android:scaleType="fitXY"
-            />
+            android:src="@drawable/line" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="5dp"
-            >
+            android:paddingStart="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/normal_weight"
                 android:gravity="center"
-                android:textStyle="bold"
+                android:text="@string/normal_weight"
                 android:textColor="@color/black"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/normalWeightText"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:textStyle="bold"
                 android:layout_alignParentEnd="true"
                 android:gravity="center"
                 android:textColor="@color/black"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 

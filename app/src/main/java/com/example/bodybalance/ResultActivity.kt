@@ -28,7 +28,7 @@ class ResultActivity : AppCompatActivity() {
     private lateinit var layoutSix: RelativeLayout
     private lateinit var layoutSeven: RelativeLayout
     private lateinit var layoutEight: RelativeLayout
-    private lateinit var normalWeightText : TextView
+    private lateinit var normalWeightText: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -103,9 +103,8 @@ class ResultActivity : AppCompatActivity() {
 
         progressbar.progressMax = 40f
 
-        progressbar.setProgressWithAnimation(bmi.toFloat(),1500)
+        progressbar.setProgressWithAnimation(bmi.toFloat(), 1500)
         progressbarText.text = String.format("%.1f", bmi)
-
 
 
         val minNormalWeight = 18.5 * (heightInMeter * heightInMeter)
@@ -122,7 +121,7 @@ class ResultActivity : AppCompatActivity() {
             bmi < 16.0 -> {
                 weightResultText.text = "You have underweight body weight!"
                 layoutOne.setBackgroundColor(ContextCompat.getColor(this, R.color.one))
-                progressbar.progressBarColor = ContextCompat.getColor(this,R.color.one)
+                progressbar.progressBarColor = ContextCompat.getColor(this, R.color.one)
 
             }
             // Severely underweight Layout

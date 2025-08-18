@@ -30,7 +30,7 @@ class WelcomeActivity : AppCompatActivity() {
             val name = inputEditText.text.toString()
 
             // Check that EditText != null
-            if (name.isEmpty()){
+            if (name.isEmpty()) {
                 Toast.makeText(this, "Enter your name!", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
